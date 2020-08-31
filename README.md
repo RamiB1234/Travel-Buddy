@@ -6,7 +6,7 @@ This is an app that lets the user to enter traveling date and destination to rec
 
 ## Live Demo
 
-To test the last build of the app that is deployed to Heroku, click on this [link](https://npl-evaluater.herokuapp.com/)
+To test the last build of the app that is deployed to Heroku, click on this [link](http://travel-buddy-heroku.herokuapp.com/)
 
 ## Installation
 - Clone the repository
@@ -34,7 +34,7 @@ To test the last build of the app that is deployed to Heroku, click on this [lin
 - The app has 2 unit tests, one for client and one for express, to tests run `npm run test`
 - The app features service workers to support offline mode
 
-### Technology Used
+## Technology Used
 - HTML
 - SASS
 - Vanilla Javascript
@@ -43,6 +43,29 @@ To test the last build of the app that is deployed to Heroku, click on this [lin
 - webpack with mutiple loaders and plugins
 - jest library for unit testing
 - Heroku for hosting the live demo
+
+### Dependencies
+- `types/express`
+- `body-parser`
+- `cors`
+- `cron`
+- `dotenv`
+- `express`
+- `webpack`
+- `babel`
+- `babel/plugin-transform-runtime`
+- `clean-webpack-plugin`
+- `css-loader`
+- `html-webpack-plugin`
+- `jest/supertest`
+- `mini-css-extract-plugin`
+- `node-sass`
+- `optimize-css-assets-webpack-plugin`
+- `sass-loader`
+- `style-loader`
+- `terser-webpack-plugin`
+- `webpack-dev-server`
+- `workbox-webpack-plugin`
 
 ### License
 The project is released under [MIT](https://github.com/RamiB1234/Travel-Buddy/blob/master/LICENSE) License
