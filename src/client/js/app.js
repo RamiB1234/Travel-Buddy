@@ -4,9 +4,9 @@ let weatherbitKey= '';
 let pixbayKey= '';
 
 // API URLs:
-let geoNamesURL= 'http://api.geonames.org/postalCodeSearchJSON?&maxRows=10&username='+geoNamesUsername;
-let weatherbitCurrentURL = 'http://api.weatherbit.io/v2.0/current?'
-let weatherbitForcastURL = ' http://api.weatherbit.io/v2.0/forecast/daily?'
+let geoNamesURL= 'https://api.geonames.org/postalCodeSearchJSON?&maxRows=10&username='+geoNamesUsername;
+let weatherbitCurrentURL = 'https://api.weatherbit.io/v2.0/current?'
+let weatherbitForcastURL = ' https://api.weatherbit.io/v2.0/forecast/daily?'
 let pixbayURL= 'https://pixabay.com/api/?';
     
 let errorOccurred = false;
