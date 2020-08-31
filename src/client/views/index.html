@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Buddy</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="">
+                Travel Buddy
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" id='my-form'>
+                    Travel Date:<input id="travel-date" type="text" readonly>
+                    Destination:<input id="distination" type="text" name="input" value="" placeholder="Tokyo">
+                    <input type="submit" name="" value="submit">
+                </form>
+            </section>
+            <section>
+             <div id="loading" class="loading" style="visibility: hidden;">Loading...</div>
+             <div id="error" class="loading" style="visibility: hidden;">An error has occurred</div>
+            </section>
+            <section id='travel-section' style="visibility: hidden;">
+                <h1>Travel information:</h1>
+                <div class='travel-info'>
+                    <div>
+                        <img id='place-image' class="travel-image">
+                    </div>
+                    <div style="width: 100%;">
+                        <b>My trip to: <span id='city'></span>, <span id='country-code'></span></b><br/>
+                        <b>Departing: <span id='travel-date-lbl'></span></b><br/>
+                        <button onclick="window.print()">Print</button><button id='remove-btn'>Remove trip</button><br/><br/>
+                        Your flight is <b><span id='days'></span></b> days away<br/><br/>
+                        <b>Weather info:</b><br/>
+                        <span id='weather-info'></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>All rights reserved</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+        <script>
+            var picker = new Pikaday({ field: document.getElementById('travel-date') });
+        </script>
+    </body>
+</html>

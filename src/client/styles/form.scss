@@ -1,0 +1,18 @@
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.loading {
+    font-size: x-large;
+    color: red;
+}
+
+input {
+    padding: 0px 20px;
+    line-height: 16px;
+    margin-right: 10px;
+}
