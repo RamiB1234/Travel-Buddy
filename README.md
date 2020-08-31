@@ -45,4 +45,4 @@ To test the last build of the app that is deployed to Heroku, click on this [lin
 - Heroku for hosting the live demo
 
 ### License
-The project is released under [MIT](https://github.com/RamiB1234/evaluate-news-NLP/blob/master/LICENSE) License
+The project is released under [MIT](https://github.com/RamiB1234/Travel-Buddy/blob/master/LICENSE) License
