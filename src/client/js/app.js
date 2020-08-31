@@ -46,7 +46,8 @@ function handleSubmit() {
         if(errorOccurred===true){
           return;
         }
-        getapikeys('http://localhost:8081/getapikeys').then(function(data){
+        getapikeys('https://travel-buddy-heroku.herokuapp.com//getapikeys').then(function(data){
+        //getapikeys('http://localhost:8081/getapikeys').then(function(data){
           if(errorOccurred===true){
             return;
           }

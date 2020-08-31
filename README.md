@@ -14,7 +14,7 @@ To test the last build of the app that is deployed to Heroku, click on this [lin
 - Run the command `npm install` to download all the required packages
 - Run the command `npm start` to start the local server (port 8081)
 - Run the command `npm run build-dev` to start the development environment build
-- Create a new file names `.env`, add update API keys of Weather bit API and Pixbay API
+- Create a new file names `.env`, update API keys of Weather bit API and Pixbay API
 
 ## Features
 - Showing destination image
